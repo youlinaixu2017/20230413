@@ -1,0 +1,129 @@
+﻿@charset "utf-8";
+
+@import url(common.css);	/*前台公用*/
+@import url(head.css);
+@import url(body.css);	/*从#body起,规定至.content止*/
+@import url(foot.css);
+@import url(content.css);	/*前后台公用（可供后台编辑器调用）*/
+
+
+
+#banner .bgPic {
+	height:460px;
+	margin-bottom: 30px;
+}
+
+#companyAndProduct{
+	float: left;
+	width:660px;
+}
+#companyAndProduct #companyInfo{
+	background:url("images/aboutBg.gif") no-repeat 0 30px;
+	padding-left: 220px;
+	margin: 40px 0;
+}
+
+#jobInfo{
+	float: right;
+	width:310px;
+}
+
+.title{
+	background:url("images/titleBg.gif") no-repeat 0 0;
+	height: 50px;
+}
+.title b {
+	float: left;
+	height:50px;
+	font-size: 20px;
+	margin-left: 30px;
+	line-height: 50px;
+	color: white;
+}
+.title .moreBtn {
+	float: right;
+	padding-right: 5px;
+	padding-top: 15px;
+	font-weight: normal;
+}
+
+
+#textList_simple ul li {
+	padding:2px;
+	margin-bottom:0;
+	padding-left:15px;
+	border-bottom-width:0;
+	width:170px;
+}
+#textList_simple ul li .times {
+	display:none;
+}
+
+#typeList_sum {
+	margin: 12px 0;
+	
+}
+#typeList_sum li {
+	float:left;
+	width:210px;
+	height: 155px;
+	margin: 5px;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+}
+
+#companyAndProduct #typeList_sum li.index_0 {
+	display: none;
+}
+#typeList_sum li .pic {
+	position: absolute;
+	width:210px;
+	height: 155px;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	border-width: 0;
+	left: 0;
+	top: 0;
+}
+#typeList_sum li .pic img {
+}
+
+#typeList_sum li .text {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	margin:0;
+	padding: 0;
+	filter:alpha(opacity=80); /* IE */
+	-moz-opacity:0.8; /* 老版Mozilla */
+	-khtml-opacity:0.8; /* 老版Safari */
+	opacity: 0.8; /* 支持opacity的浏览器*/
+}
+#typeList_sum li.over .text {
+	filter:alpha(opacity=80); /* IE */
+	-moz-opacity:0.8; /* 老版Mozilla */
+	-khtml-opacity:0.8; /* 老版Safari */
+	opacity: 0.8; /* 支持opacity的浏览器*/
+}
+#typeList_sum li .text a {
+	display: block;
+	width:210px;
+	height: 155px;
+	font-size: 25px;
+	margin: 0;
+	background: #00678E;
+	line-height:155px;
+	color: white;
+	text-align: center;
+}
+#typeList_sum li .text .readme{
+	display: none;
+}
+
+#jobInfo blockquote {
+	padding: 10px;
+	
+}
